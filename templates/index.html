@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Analyzing</title>
+    <link rel="stylesheet" href="../static/index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>👏Analyzing whether the text is related to computer science</h1>
+        <form action="/predict" method="POST">
+            <label for="input_value">Please enter a sentence or a message in Eglish</label><br>
+            <div class="comment">(the more described, the more accurate):</div>
+            <textarea id="input_value" name="input_value"></textarea>
+            <button type="submit" value="Predict">click me👈</button>
+        </form>
+
+        <div class="technical_intro">
+            <h2>{{ prediction_text }}</h2>
+            <ul>
+                <li>Based on the k-means algorithm</li>
+                <li>Datasets are come from <strong>20 Newsgroups</strong> and <strong>StackOverflow forum</strong></li>
+                <li>Analyzing whether the text is related to computer science</li>
+                <li>The accurancy is not high,the more described, the more accurate</li>
+                
+            </ul>
+        </div>
+
+    </div>
+    
+</body>
+</html>
