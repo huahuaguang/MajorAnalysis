@@ -6,6 +6,7 @@
   </a>
 
 <h3 align="center">Simple text anlysis</h3>
+  <p  align="center">Exploring the feasibility of unsupervised methods in text classification</p>
 
   <p align="center">
     Based on the <strong>k-means algorithm</strong>.<br>
